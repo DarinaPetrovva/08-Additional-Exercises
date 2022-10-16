@@ -1,0 +1,9 @@
+SELECT e.EmployeeID,
+	   e.FirstName,
+	   e.LastName,
+	   a.Name
+FROM Employees AS e
+JOIN Departments AS a
+	ON a.DepartmentID = e.DepartmentID
+WHERE a.Name = 'Sales'
+ORDER BY e.EmployeeID
